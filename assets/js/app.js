@@ -37,9 +37,16 @@ $(document).ready(function() {
       /* ------------------------------------- */
      /*   recaptcha
      /* ------------------------------------- */
-   function Checkrecaptcha ()
+   function Checkrecaptcha (this)
         {
-         
+         if(inrecaptch=="")
+                {
+          alert("El captcha de google no ha sido activado...");
+                 this.preventDefault();
+                 return false;
+                
+                }
+          else {alert ("El captcha ha sido activado.... ");}
         }
      
  
