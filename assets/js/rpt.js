@@ -18,7 +18,7 @@ function start()
 	 var name=d.getElementById('name').value;
          var email=d.getElementById('email').value;
          var message=d.getElementById('massage').value;
-         if(name!=""||email!=""||message!="")
+         if(name!="" && email!="" && message!="")
 	 {
 		  if(inrecaptch=="")
                 {
