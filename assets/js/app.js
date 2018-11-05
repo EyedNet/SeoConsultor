@@ -33,30 +33,8 @@ $(window).load(function() {
 
 
 $(document).ready(function() {
-       var inrecaptch=grecaptcha.getResponse();
-       document.getElementById('submit').addEventListener('click',Checkrecaptcha,false);
       /* ------------------------------------- */
-     /*   recaptcha
-     /* ------------------------------------- */
-   function Checkrecaptcha (evento)
-        {
-         if(inrecaptch=="")
-                {
-          alert("El captcha de google no ha sido activado...");
-                 evento.preventDefault();		
-		               return false;
-                
-                }
-          else {alert ("El captcha ha sido activado.... ");
-               evento.preventDefault();		
-	             	return false;
-               }
-        }
-     
- 
- 
-    /* ------------------------------------- */
-    /*   wow
+     /*   wow
      /* ------------------------------------- */
 
           var wow = new WOW(
