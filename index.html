@@ -41,7 +41,7 @@
   <!-- Custom styles for this template -->
   <link href="assets/css/style.css" rel="stylesheet">
    <!-- recaptcha antibots -->
-  <script src='https://www.google.com/recaptcha/api.js?render=6Ldr3HgUAAAAANMVd6zFFFIhL2J4peETpHWvrXhx'></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -409,14 +409,7 @@
         <div class="row">
           <div class="col-sm-12 text-right">
             <input type="submit" id="submit" name="send" class=" btn btn_blue_black submit_btn" value="Enviar mensaje"> </div>
-          <script>
-grecaptcha.ready(function() {
-grecaptcha.execute('6Ldr3HgUAAAAANMVd6zFFFIhL2J4peETpHWvrXhx', {action: 'action_name'})
-.then(function(token) {
-// Verify the token on the server.
-});
-});
-</script>
+            <div class="g-recaptcha" data-sitekey="6Lfw3XgUAAAAACH_XhFKBOPbLrElRrf2QClVw6he"></div>
         </div>
       </form>
       <div class="row contact-info">
