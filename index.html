@@ -384,7 +384,7 @@
                 <span class="input-group-addon ">
                   <i class="icon-profile-male"></i>
                 </span>
-                <input name="name" type="text" class="form-control" placeholder="Su nombre..." id="name"> </div>
+                <input name="name" type="text" class="form-control" placeholder="Su nombre..." id="name" required> </div>
             </div>
           </div>
           <div class="col-sm-6">
@@ -393,14 +393,14 @@
                 <span class="input-group-addon">
                   <i class=" icon-envelope"></i>
                 </span>
-                <input id="email" name="email" type="email" class="form-control" placeholder="Su correo...."> </div>
+                <input id="email" name="email" type="email" class="form-control" placeholder="Su correo...." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <textarea name="massage" cols="3" rows="4" class="form-control" placeholder="Su mensaje..." id="massage"></textarea>
+              <textarea name="massage" cols="3" rows="4" class="form-control" placeholder="Su mensaje..." id="massage" required></textarea>
             </div>
           </div>
         </div>
