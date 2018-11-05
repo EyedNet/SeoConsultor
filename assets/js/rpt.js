@@ -14,6 +14,7 @@ function start()
      /* ------------------------------------- */
    function Checkrecaptcha (evento)
         {
+         var inrecaptch=grecaptcha.getResponse();
          if(inrecaptch=="")
                 {
           alert("El captcha de google no ha sido activado...");
