@@ -33,6 +33,17 @@ $(window).load(function() {
 
 
 $(document).ready(function() {
+       var inrecaptch=grecaptcha.getResponse();
+      /* ------------------------------------- */
+     /*   recaptcha
+     /* ------------------------------------- */
+   function Checkrecaptcha ()
+        {
+         
+        }
+     
+ 
+ 
     /* ------------------------------------- */
     /*   wow
      /* ------------------------------------- */
