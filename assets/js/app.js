@@ -37,7 +37,7 @@ $(document).ready(function() {
       /* ------------------------------------- */
      /*   recaptcha
      /* ------------------------------------- */
-   function Checkrecaptcha (this)
+   function Checkrecaptcha ()
         {
          if(inrecaptch=="")
                 {
