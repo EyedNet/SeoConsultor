@@ -10,21 +10,22 @@ function start()
 
       
       /* ------------------------------------- */
-     /*   recaptcha
+     /*   CHEQUEAR CAMPOS NO VACÍOS Y CAPTCHA
      /* ------------------------------------- */
    function Checkrecaptcha (evento)
         {
          var inrecaptch=grecaptcha.getResponse();
 	 var name=d.getElementById('name').value;
-         var email=d.getElementById('email').value;
          var message=d.getElementById('massage').value;
-         if(name!="" && email!="" && message!="")
+         if(name!=""
+	    &&email!="" 
+	    && message!="")
 	 {
 		  if(inrecaptch=="")
                 {
-          alert("El captcha de google no ha sido activado...");
+                 alert("El captcha de google no ha sido activado...");
                  evento.preventDefault();		
-		               return false;
+		 return false;
                 
                 }
           else 
@@ -36,6 +37,29 @@ function start()
 		 
 	 }
 		else {alert("Los campos del formulario deben ser rellenados correctamente...");}
+		
+		function checkEmail()
+		{
+		   var email=d.getElementById('email').value;
+                   regex_mail=/@{1}\D{1,}\.{1}[a-zA-Z]{3}$/;
+	            if(email!="")
+                     {
+ 	           //compruebo si no tiene las coincidencias del regex
+ 	            if (!regex_mail.test(email))
+ 	                {
+
+ 	                  alert ('Error....!\nEmail inválido\n    Rectifíquelo...');
+		
+		          return false;		
+ 	                 }
+ 	else return true;
+ }
+ else
+ 	{
+ 		return true;
+ 	}
+		
+		}
 	 	
         
         }
