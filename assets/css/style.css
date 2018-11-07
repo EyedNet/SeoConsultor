@@ -135,7 +135,6 @@ a:active {
 }
 
 
-
 /*colors - background */
 .bg-light{
     background-color: #FFFFFF;
@@ -515,7 +514,8 @@ a:active {
 -------------------------------------------------------- */
 
 .header{
-    background-color: transparent;
+    background-color: black;
+    opacity:50%;
     width: 100%;
     min-height: 60px;
     padding-top: 20px;
@@ -526,7 +526,8 @@ a:active {
 }
 
 .sticky_header.header{
-    background-color: #FFFFFF;
+    background-color: black;
+    opacity:50%;
     width: 100%;
     box-shadow: 0 0 42px 0 rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0 0 42px 0 rgba(0, 0, 0, 0.08);
@@ -603,7 +604,8 @@ a:active {
 
 @media (max-width:768px) {
     .header, .header.sticky_header {
-        background-color: #FFFFFF;
+        background-color: black;
+        opacity:50%;
         width: 100%;
         box-shadow: 0 0 42px 0 rgba(0, 0, 0, 0.08);
         -moz-box-shadow: 0 0 42px 0 rgba(0, 0, 0, 0.08);
@@ -1602,4 +1604,12 @@ footer address a{
 .footer_author p{
     margin: 0;
     padding: 0;
+}
+#go-top {
+    
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    z-index: 9;
 }
