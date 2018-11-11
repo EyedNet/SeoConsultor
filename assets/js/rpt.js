@@ -6,6 +6,20 @@ var inrecaptch=grecaptcha.getResponse();
 function start()
 {
  d.getElementById('submit').addEventListener('click',Checkrecaptcha,false);
+	//Efecto changes text
+ var text = ["Desarrollo Web", "Posicinamiento Web", "Landing Pages", 
+	     "Inbound && Outbound Links de Calidad", "Análisis Palabras Clave", 
+	     "Informes completos SEO en pdf", "Programadores Java,php,javascript a tu disposición",
+	     "Te hacemos tu tienda on line"];
+  var counter = 1;
+  var elem = document.getElementById("writer");
+				setInterval(function() {
+                    elem.innerHTML = text[counter];
+                    counter++;
+                    if(counter >= text.length) {
+                        counter = 0;
+                    }
+                }, 2000);
 }
 
       
