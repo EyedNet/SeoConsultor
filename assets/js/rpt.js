@@ -7,10 +7,10 @@ function start()
 {
  d.getElementById('submit').addEventListener('click',Checkrecaptcha,false);
 	//Efecto changes text
- var text = ["Desarrollo Web", "Posicinamiento Web", "Landing Pages", 
+ var text = ["Desarrollo Web", "Posicionamiento Web", "Landing Pages", 
 	     "Inbound && Outbound Links de Calidad", "Análisis Palabras Clave", 
 	     "Informes completos SEO en pdf", "Programadores Java,php,javascript a tu disposición",
-	     "Te hacemos tu tienda on line"];
+	     "Creamos tu tienda on line","Cambiamos el estilo de tu empresa con nuestros expertos en marketing" ];
   var counter = 1;
   var elem = document.getElementById("writer");
 				setInterval(function() {
