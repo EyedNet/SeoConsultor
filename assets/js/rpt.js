@@ -7,7 +7,7 @@ function start()
 {
  d.getElementById('submit').addEventListener('click',Checkrecaptcha,false);
 	//Efecto changes text
- var text = ["Desarrollo Web", "Posicinamiento Web", "Landing Pages", 
+ /*var text = ["Desarrollo Web", "Posicinamiento Web", "Landing Pages", 
 	     "Inbound && Outbound Links de Calidad", "Análisis Palabras Clave", 
 	     "Informes completos SEO en pdf", "Programadores Java,php,javascript a tu disposición",
 	     "Te hacemos tu tienda on line"];
@@ -19,7 +19,7 @@ function start()
                     if(counter >= text.length) {
                         counter = 0;
                     }
-                }, 2000);
+                }, 2000);*/
 }
 
       
