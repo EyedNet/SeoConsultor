@@ -22,10 +22,15 @@
 /*   COUNTER                             */
 
 
+/*--------------------------------------------*/
+/*  PRE LOADING
+ /*------------------------------------------*/
+
+
 
 $(document).ready(function() {
-      /* ------------------------------------- */
-     /*   wow
+    /* ------------------------------------- */
+    /*   wow
      /* ------------------------------------- */
 
           var wow = new WOW(
@@ -206,49 +211,12 @@ $(document).ready(function() {
     });
 
 
+   
 
-        // Get the HTML DOM element that will contain your map
-        // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById('map');
-
-        // Create the Google Map using our element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
-
-        // Let's also add a marker while we're at it
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(lattuide, longtuided),
-            map: map,
-            title: 'Snazzy!'
-        });
-    }
+    
 
 
-
-    /* --------------------------------------------------------
-     TEXTILLATE ANIMATE
-     ----------------------------------------------------------- */
-    "use strict";
-    var tlt  = $(".tlt");
-    if(tlt.length > 0 ) {
-        tlt.textillate({
-            loop: true,
-            minDisplayTime: 5000,
-            in: {
-                // set the effect name
-                effect: 'fadeInLeft',
-                delayScale: 1.5
-            },
-            out: {
-                effect: 'hinge',
-                delayScale: 1.5,
-                delay: 50,
-                sync: false,
-                shuffle: false,
-                reverse: false,
-                callback: function () {}
-            }
-        });
-    }
+    
 
 
     /* --------------------------------------------------------
