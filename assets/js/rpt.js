@@ -5,15 +5,15 @@ var d = document;
 
 function start()
 {
-     d.getElementById('c12').addEventListener('click',Checkrecaptcha,false);
+        d.getElementById('c12').addEventListener('click',Checkrecaptcha,false);
  
 	//==============Efecto changes text==========>
 	var text = ["Desarrollo Web", "Posicionamiento Web", "Landing Pages", 
 	     "Inbound && Outbound Links de Calidad", "Análisis Palabras Clave", 
 	     "Informes completos SEO en pdf", "Programadores Java,php,javascript a tu disposición",
 	     "Creamos tu tienda on line","Cambiamos el estilo de tu empresa con nuestros expertos en marketing" ];
-    var counter = 1;
-    var elem = document.getElementById("writer");
+        var counter = 1;
+        var elem = document.getElementById("writer");
 				setInterval(function() {
                     elem.innerHTML = text[counter];
                     counter++;
@@ -29,10 +29,10 @@ function start()
      /* ------------------------------------- */
    function Checkrecaptcha (evento)
         {
-         var inrecaptch=grecaptcha.getResponse();
-	     var name=d.getElementById('c9').value;
-         var message=d.getElementById('c11').value;
-         if(name!=""
+          var inrecaptch=grecaptcha.getResponse();
+	  var name=d.getElementById('c9').value;
+          var message=d.getElementById('c11').value;
+          if(name!=""
 	        &&checkEmail() 
 	        && message!="")
 	    {
