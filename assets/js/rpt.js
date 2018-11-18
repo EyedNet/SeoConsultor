@@ -5,7 +5,7 @@ var d = document;
 
 function start()
 {
-        d.getElementById('c12').addEventListener('click',Checkrecaptcha,false);
+        //d.getElementById('c12').addEventListener('click',Checkrecaptcha,false);
  
 	//==============Efecto changes text==========>
 	var text = ["Desarrollo Web", "Posicionamiento Web", "Landing Pages", 

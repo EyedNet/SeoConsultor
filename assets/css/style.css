@@ -557,7 +557,7 @@ a:active {
     font-size: 30px;
     text-transform: capitalize;
     padding: 20px 15px;
-    color: #343434;
+    color: #FFFFFF;
     text-shadow: none;
     font-weight: 800;
     height: 100%;
@@ -579,7 +579,7 @@ a:active {
 }
 
 .header.sticky_header .navbar-nav li a {
-    color: #656565;
+    color: #FFFFFF;
     font-size: 16px;
     background-color: transparent !important;
     padding: 20px 15px;
@@ -624,7 +624,7 @@ a:active {
         font-size: 30px;
         text-transform: capitalize;
         padding: 20px 15px;
-        color: #343434;
+        color: #FFFFFF;
         text-shadow: none;
         font-weight: 800;
         height: 100%;
