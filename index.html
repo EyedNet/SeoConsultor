@@ -603,7 +603,10 @@
   <script src="assets/js/jquery.textillate.js"></script>
   <!-- Custom js -->
   <script src="assets/js/app.js"></script>
- 
+    <script>var loc = window.location.href+'';
+if (loc.indexOf('http://')==0){
+    window.location.href = loc.replace('http://','https://');
+}</script>
 </body>
 
 </html>
